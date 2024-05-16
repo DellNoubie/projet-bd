@@ -1,35 +1,68 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState } from 'react';
 
-function App() {
-  const [count, setCount] = useState(0)
+const Home = () => {
+  const [classe, setClasse] = useState('');
+  const [matiere, setMatiere] = useState('Physique');
+  const [iden, setIden] = useState('');
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    if (name === 'classe') {
+      setClasse(value);
+    } else if (name === 'matiere') {
+      setMatiere(value);
+    } else if (name === 'iden') {
+      setIden(value);
+    }
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Insérez ici le code de traitement de la soumission du formulaire
+  };
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div>
+      <h1>Gestion Des Requetes</h1>
+      <h2>Seances des cours d'une matiere dans une classe</h2>
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="classe">Classe</label>
+        <select
+          id="classe"
+          name="classe"
+          value={classe}
+          onChange={handleChange}
+          multiple
+        >
+          <option value="classe1">6eme</option>
+          <option value="classe2">5eme</option>
+          <option value="classe3">4eme</option>
+          <option value="classe4">3eme</option>
+          <option value="classe5">2nd</option>
+          <option value="classe6">1ere</option>
+          <option value="classe7">tle</option>
+        </select>
+        <label htmlFor="matiere">Matiere</label>
+        <input
+          type="text"
+          id="matiere"
+          name="matiere"
+          value={matiere}
+          onChange={handleChange}
+        />
+        <button className="btn-button-primary" type="submit">Rechercher</button>
+        <label htmlFor="iden">id</label>
+        <input
+          type="text"
+          id="iden"
+          name="iden"
+          value={iden}
+          onChange={handleChange}
+        />
+        <input type="submit" value="Supprimer" />
+      </form>
+    </div>
+  );
+};
 
-export default App
+export default Home;
