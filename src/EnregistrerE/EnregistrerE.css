@@ -1,0 +1,108 @@
+#EnregistrerE{
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .container {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40%;
+  }
+  
+  .form-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  label {
+    width: 100px;
+    margin-right: 10px;
+    text-align: right;
+  }
+  
+  input {
+    flex: 1;
+    padding: 5px;
+    font-size: 1em;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #42b983;
+    border: none;
+    color: white;
+    cursor: pointer;
+    align-self: center;
+    font-size: 1em;
+    margin: 5px;
+  }
+  
+  button:hover {
+    background-color: #38a169;
+  }
+  
+  .table-container {
+    width: 50%;
+  }
+  
+  .search-group {
+    display: flex;
+    margin-bottom: 15px;
+    border-radius: 10px;
+  }
+  
+  .search-group input {
+    flex: 1;
+    padding: 5px;
+    font-size: 1em;
+    margin-right: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  td button {
+    padding: 5px 10px;
+    background-color: #42b983;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-right: 5px;
+  }
+  
+  td button:hover {
+    background-color: #38a169;
+  }
+  

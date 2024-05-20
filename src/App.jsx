@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import EnregistrerE from  './EnregistrerE/EnregistrerE.jsx'
 
 const Home = () => {
   const [classe, setClasse] = useState('');
@@ -61,7 +62,9 @@ const Home = () => {
         />
         <input type="submit" value="Supprimer" />
       </form>
+       <EnregistrerE/>
     </div>
+    
   );
 };
 
