@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from 'react';
 import EnregistrerE from  './EnregistrerE/EnregistrerE.jsx'
 
@@ -67,5 +68,18 @@ const Home = () => {
     
   );
 };
+=======
+import React from 'react'
+import { Courses } from './pages/courses'
+const App = () => {
+  return (
+    <div className='container'>
+    <Courses/>  
+    <h1>bonjour</h1>
+  </div>
+>>>>>>> 21e9bce127c02a00862e3f0c8b065cab36eefc43
 
-export default Home;
+  )
+}
+
+export default App
