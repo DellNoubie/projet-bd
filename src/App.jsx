@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useState } from 'react';
 import EnregistrerE from  './EnregistrerE/EnregistrerE.jsx'
 
@@ -77,7 +76,6 @@ const App = () => {
     <Courses/>  
     <h1>bonjour</h1>
   </div>
->>>>>>> 21e9bce127c02a00862e3f0c8b065cab36eefc43
 
   )
 }
